@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carousel</title>
+    <meta charset="UTF-8">
+    <style>
+    .leftArrow{float:left;background:url(left.png) no-repeat center center;height:200px;width:30px;cursor:pointer;}
+    .rightArrow{float:left;background:url(right.jpg) no-repeat center center;height:200px;width:30px;cursor:pointer;}
+    .container{width:608px;height:200px;border:4px solid #ccc;overflow:hidden;overflow-x: auto;overflow-y: hidden;float:left;}
+    .content{width:2000px;height:200px;}
+
+    </style>
+
+
+    <script language="javascript" src="main.js"></script>
+</head>
+<body>
+  <div class="leftArrow"  onClick="MyScoll('container','Right',204)"></div>
+  <div class="container" id="container">
+  	<div class="content " >
+    	<img src="1.jpg">
+        <img src="2.jpg">
+        <img src="3.jpg">
+        <img src="4.jpg">
+        <img src="5.jpg">
+        <img src="6.jpg">
+        <img src="1.jpg">
+        <img src="2.jpg">
+        <img src="3.jpg">
+
+    </div>
+  </div>
+  <div class="rightArrow" onClick="MyScoll('container','Left',204)"></div></body>
+</html>
+
